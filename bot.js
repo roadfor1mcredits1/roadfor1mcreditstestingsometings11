@@ -48,16 +48,11 @@ client.on('message', message => {
 
   let args = message.content.split(" ").slice(1);
 
-if (command == "1say") {
-if(!message.guild.member(message.author).hasPermission("ADMINISTRATOR")) return message.reply("*لا تملك الصلاحيات المطلوبه**");
-
-message.channel.send(args.join("  "))
-    message.delete();
+  if (command == "1say") {
+   message.channel.sendMessage(args.join("  "))
+   message.delete()
   }
-
-
-
-});
+ });
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
