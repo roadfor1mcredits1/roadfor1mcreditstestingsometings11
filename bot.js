@@ -1,4 +1,3 @@
-
 var ServerID = "501706352234856449"; //اي دي السيرفر
 var ChannelID = "501707152554197013";// اي دي الروم
 
@@ -41,6 +40,4 @@ client.on('ready', () => {
 
 
 
-
-// THIS  MUST  BE  THIS  WAY
-client.login(process.env.BOT_TOKEN);
+client.login("NTAxNzMxNDQxOTkwODI4MDMy.DqdpwQ.lF7U07VgkeoIJw9RoreEFmx6s3E");
