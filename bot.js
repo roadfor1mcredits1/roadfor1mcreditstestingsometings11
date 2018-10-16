@@ -39,20 +39,7 @@ client.on('ready', () => {
     client.channels.get("501724523368808458").join();
     }); 
 
-client.on('message', message => {
-	  if (message.author.id !== '314845344313901057') return message.reply('**هاذا الامر فقط لصاحب البوت فقط**')
- if(!message.author.id === '314845344313901057') return
 
-  let command = message.content.split(" ")[0];
-  command = command.slice(prefix.length);
-
-  let args = message.content.split(" ").slice(1);
-
-  if (command == "1say") {
-   message.channel.sendMessage(args.join("  "))
-   message.delete()
-  }
- });
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
