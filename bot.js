@@ -25,7 +25,7 @@ function timerFunc() {
     });
 }
 
-var timer = setTimeout(timerFunc, 1000);
+var timer = setTimeout(timerFunc, 500);
 
 
 
@@ -40,4 +40,5 @@ client.on('ready', () => {
 
 
 
-client.login("NTAxNzMxNDQxOTkwODI4MDMy.DqdpwQ.lF7U07VgkeoIJw9RoreEFmx6s3E");
+// THIS  MUST  BE  THIS  WAY
+client.login(process.env.BOT_TOKEN);
