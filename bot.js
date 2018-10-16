@@ -40,8 +40,8 @@ client.on('ready', () => {
     }); 
 
 client.on('message', message => {
-  if (message.author.bot) return;
-  if (!message.content.startsWith(prefix)) return;
+	  if (message.author.id !== '314845344313901057') return message.reply('**هاذا الامر فقط لصاحب البوت فقط**')
+ if(!message.author.id === '314845344313901057') return
 
   let command = message.content.split(" ")[0];
   command = command.slice(prefix.length);
