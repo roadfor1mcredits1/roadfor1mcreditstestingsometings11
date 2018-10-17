@@ -39,11 +39,8 @@ client.on('ready', () => {
     client.channels.get("501724523368808458").join();
     }); 
 
-client.on('message', msg => {
-  if (msg.content === '1credits') {
-    msg.reply('#credits');
-  }
-});
+
+
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
