@@ -35,7 +35,7 @@ var timer = setTimeout(timerFunc, 500);
 
 client.on('ready', () => {
     client.channels.get("502940526149107723").join();
-    }); 
+    });  
 
 
 
