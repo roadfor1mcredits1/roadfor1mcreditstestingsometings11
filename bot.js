@@ -5,7 +5,6 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = 'a';
 
-var timer = setTimeout(timerFunc, 500);
 
 
 client.on('message', message => {
